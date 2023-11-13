@@ -1,0 +1,27 @@
+#box {
+  width: 200px;
+  height: 200px;
+  background: red;
+  transition: all 0.3 ease-in;
+}
+.fancy {
+  border-radius: 25%;
+  background: rgb(34, 193, 195) !important;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #b8e1fc 0%,
+    #231421 100%
+  );
+  rotate: 23deg;
+  scale: 1.5;
+  translate: 300px;
+  animation: 0.2s spin linear infinite;
+}
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

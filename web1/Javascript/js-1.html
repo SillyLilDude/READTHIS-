@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS1-intro</title>
+  </head>
+  <body>
+    <h1>I have your IP...</h1>
+    <div id="numbers">:D</div>
+    <!--Step 1: select the div via JS and assign it to a variable-->
+    <div id="excercise"></div>
+    <!--Step 2: add an image from google to it nia innerHTML-->
+    <!-- optional step 3: ass some styling to the div-->
+    <script>
+      alert("the fog is coming");
+      console.log("Womp Womp");
+      const specialNumber = 7;
+      let otherNumber = 9;
+      let result = specialNumber + otherNumber;
+      console.log(result);
+      const myNumbersDiv = document.getElementById("numbers");
+      // myNubersDiv.innerHTML = "result: <i>" + result + "</i>";//
+
+      myNumbersDiv.innerHTML = `result: <i> ${result} </i>
+        <hr>
+         The fog is coming... <br>
+         <img style="width: 100%;max-width: 600px;" src="https://external-preview.redd.it/PQ-NNUsKfcptEiVXcNHi8Ovmvj-cILo6U387bZ4zTnM.png?format=pjpg&auto=webp&s=e83537c35f8c5a9c98d77849d146291d9cf10554"`;
+      myNumbersDiv.style.backgroundColor = "00F00";
+      myNubersDiv.style.color = "yellow";
+
+      //step1:
+      const myExercise = document.getElementById("exercise");
+
+      //step2:
+      myExercise.innerHTML =
+        '<img style="WIDTH:100%" src="https://external-preview.redd.it/PQ-NNUsKfcptEiVXcNHi8Ovmvj-cILo6U387bZ4zTnM.png?format=pjpg&auto=webp&s=e83537c35f8c5a9c98d77849d146291d9cf10554"';
+
+      //step3:
+      myExercise.style.rotate = "30deg";
+      myExercise.style.width = "50deg";
+    </script>
+  </body>
+</html>
