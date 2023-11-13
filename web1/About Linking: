@@ -1,0 +1,16 @@
+  About linking:
+
+  <a href="FILE STRUCTURE/FILE">Link to my File</a>
+
+
+File STRUCTURE
+
+../ = going to parent folder
+
+./ = here
+
+/ = go to upmost root folder possible
+for example: <www.pizza.com/>
+
+<p> this will be my web 1 conect</p>
+<a href="../index.html">back</a>

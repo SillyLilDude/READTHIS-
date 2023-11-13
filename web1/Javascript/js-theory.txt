@@ -1,0 +1,25 @@
+Alerting & Logging
+
+alert("THE FOG IS COMING!");
+      console.log("The OG IS COMING! :-s");
+
+Variables
+// Constant
+const specialNumber = 7;
+// Dynamic variable
+let otherNumber = 9;
+
+// Oldschool
+var oldNumber = 10
+
+console. log(specialNumber + otherNumber);
+
+Basic Math Operattion
+with + - * / and your Variables
+
+Concatenation of different data types & content always with plus +
+
+"the final number is:" + result;
+
+Backtick quoyes `` are used to combine Variables and textual data, ex.:
+`Result is: ${Result}

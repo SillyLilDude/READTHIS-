@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(0, 225, 106) !important; */
+  /* use the !important override only when necessary */
+  background-color: rgb(75, 75, 75);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 28px;
+}
+
+h1 {
+  /* rem refers to root element font size of 16px
+    for example 16px x 2.5 = 40px */
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 15px;
+}
+
+header {
+  background-color: azure;
+  /* padding:40px 120px 20px 30px; */
+  padding: 10px 0px;
+  /* width: 300px; */
+  height: 200px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(116, 0, 0);
+}
+nav ul lia:hover {
+  color: chartreuse;
+  text-decoration: underline;
+}
+
+.wrapper {
+  display: grid;
+  /* grid-template-colums: 1fr 1fr 1fr; */
+
+  grid-template-columns: repeat(4, 1fr);
+
+  /* grid-colum-gap: 30px;
+  grid-row-gap: 30px; */
+
+  gap: 30px;
+}
+.grid-item {
+  background-color: rgb(83, 2, 15);
+  width: 100%;
+  height: 500px;
+}
+.grid-item img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+/* main{
+    padding: 20px;
+    background-color: cornsilk;
+    display: flex;
+
+}
+
+article{
+    width: 50%;
+    background-color: crimson;
+}
+section{
+    width: 20px;
+    backgrond-color: darckgreen;
+}
+aside{
+    width: 30px;
+    background-color: darkseagreen;
+}
+article, section, aside {
+    padding: 10px;
+    min-height: 500px;
+} */
+
+div#band {
+  height: 200px;
+  background-color: rgb(48, 63, 41);
+  padding: 30px 20px;
+}
+
+footer {
+  height: 20px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    grid-templte-colums: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
